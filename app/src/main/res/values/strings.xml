@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">tipcal</string>
+    <string name="labelbill">Bill</string>
+    <string name="labeltip">Tip %</string>
+    <string name="Billenter">Enter Bill</string>
+    <string name="tipenter">Enter Tip</string>
+
+    <!--Button text-->
+
+</resources>

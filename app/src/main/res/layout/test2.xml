@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tipenter2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_700"
+        android:padding="10dp"
+        android:text="Tip"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="20dp"
+        android:text="The Tip Calculator"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/billenter"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ebill"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:padding="10dp"
+        android:text="@string/Billenter"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/billenter2"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ebill"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_700"
+        android:padding="10dp"
+        android:text="Bill"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ebill"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/billenter"
+        android:background="@color/gray"
+        android:hint="Enter Bill"
+        android:includeFontPadding="true"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="259dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/billenter"
+        android:background="@color/gray"
+        android:includeFontPadding="true"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tipenter"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:padding="10dp"
+        android:text="@string/tipenter"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/etip"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="85dp"
+
+
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/billenter"
+        android:background="@color/gray"
+        android:hint="Enter Tip"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ebill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="10dp"
+
+
+        android:layout_toRightOf="@+id/billenter"
+        android:background="@color/gray"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/calbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="420dp"
+        android:text="Calculate"
+        android:onClick="calculate"/>
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="190dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-192dp"
+        android:layout_marginLeft="-192dp"
+        android:layout_marginTop="210dp"
+        android:layout_toEndOf="@+id/tipenter2"
+        android:layout_toRightOf="@+id/tipenter2"
+        android:text="Number of people" />
+
+</RelativeLayout>
